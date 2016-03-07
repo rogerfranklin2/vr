@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>My A-Frame Scene</title>
+  <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+    <a-camera position="0 1.8 4" cursor-visible="true" cursor-scale="2" cursor-color="#4CC3D9" cursor-offset="2" cursor-maxdistance="100" cursor-opacity="0.5"></a-camera>
+
+
+    <a-curvedimage id="cube" src="http://client.nowtv.com/image/19d88b80a9aeb410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 24 0" scale="0.8 0.8 0.8">
+        <a-event name="mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
+        <a-event name="mouseleave" scale="1 1 1" color="#F16745"></a-event>
+    </a-curvedimage>
+    <a-curvedimage src="http://client.nowtv.com/image/71d4cfbd77c14410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 100 0" scale="0.8 0.8 0.8"></a-curvedimage>
+    <a-curvedimage src="http://client.nowtv.com/image/71d4cfbd77c14410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 176 0" scale="0.8 0.8 0.8"></a-curvedimage>
+    <a-curvedimage src="http://client.nowtv.com/image/71d4cfbd77c14410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 24 0" scale="0.8 0.8 0.8" position="0 3 0"></a-curvedimage>
+    <a-curvedimage src="http://client.nowtv.com/image/71d4cfbd77c14410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 100 0" scale="0.8 0.8 0.8" position="0 3 0"></a-curvedimage>
+    <a-curvedimage src="http://client.nowtv.com/image/71d4cfbd77c14410VgnVCM1000000b43150a____/1280/720/jpg" radius="5.7" theta-length="72" height="3.02" rotation="0 176 0" scale="0.8 0.8 0.8" position="0 3 0"></a-curvedimage>
+
+    <a-sky color="#10101D"></a-sky>
+  </a-scene>
+
+<script>
+document.querySelector('#cube').addEventListener('click', function () {
+  this.setAttribute('scale', '2 2 2');
+  console.log('I was clicked!');
+});
+</script>
+</body>
+</html>
