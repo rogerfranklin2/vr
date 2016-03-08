@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "serve-static": "^1.10.2",
     "webpack": "^1.12.14"
   },
   "dependencies": {
-    "aframe-physics-components": "^1.0.3"
+    "aframe-physics-components": "^1.0.3",
+    "connect": "^3.4.1"
   }
 }
